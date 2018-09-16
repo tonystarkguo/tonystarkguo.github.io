@@ -103,7 +103,7 @@
         <!-- Lists in Slidebars -->
         <ul class="sb-menu secondary">
             
-            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/about" class="animsition-link" title="about">About</a></li>
             <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
         </ul>
     </div>
@@ -133,7 +133,7 @@
                             <li><a href="/" class="animsition-link">Tony Bolg</a></li>
                             <li class="nolink"><span>Always </span>Creative.</li>
                             
-                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            <li><a href="https://github.com/tonystarkguo" title="Github" target="_blank"><i class="icon-github"></i></a></li>
                             
                             
                             <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
@@ -205,6 +205,194 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
+                    <h3><a href="/2018/09/16/shijianliu/">ie和dom事件流的区别</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2018-09-16T07:24:46.056Z" itemprop="datePublished">
+          2018-09-16
+      </time>
+    
+    
+    | 
+    <a href='/tags/js/'>js</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        #ie和dom事件流的区别1.事件流的区别IE采用冒泡型事件 Netscape使用捕获型事件 DOM使用先捕获后冒泡型事件示例：
+点击这里 
+
+
+冒泡型事件模型： button-&gt;div-&gt;body (IE事件流) 
+捕获型事件模型： body-&gt;div-&gt;button (Netscape事件流) 
+DOM事件模型： body-&gt;div-&gt;button-&gt;button-&gt;div-&gt;b
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2018/09/16/shijianliu/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2018/09/16/click/">“事件绑定和普通事件有什么区别”</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2018-09-16T07:09:45.025Z" itemprop="datePublished">
+          2018-09-16
+      </time>
+    
+    
+    | 
+    <a href='/tags/js/'>js</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        普通添加事件的方法不支持添加多个事件，最下面的事件会覆盖上面的，而事件绑定（addEventListener）方式添加事件可以添加多个。
+#普通添加事件的方法
+var btn = document.getElementById("hello");
+btn.onclick = function(){
+    alert(1);
+}
+btn.onclick = function(){
+    alert(2);
+}
+
+##执行上面的代码只会
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2018/09/16/click/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2018/09/16/cpmpat/">js中的文档模式document.compatMode(浏览器标准模式和怪异模式)</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2018-09-16T05:43:18.112Z" itemprop="datePublished">
+          2018-09-16
+      </time>
+    
+    
+    | 
+    <a href='/tags/js/'>js</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        盒子模型 渲染模式的不同使用 window.top.document.compatMode 可显示为什么模式IE对盒模型的渲染在 Standards Mode和Quirks Mode是有很大差别的，在Standards Mode下对于盒模型的解释和其他的标准浏览器是一样，但在Quirks Mode模式下则有很大差别，而在不声明Doctype的情况下，IE默认又是Quirks Mode。所以为兼容性考虑，我们可能需要获取当前的文档渲染方式
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2018/09/16/cpmpat/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2018/09/16/ifream/">iframe的优缺点</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2018-09-16T04:41:59.315Z" itemprop="datePublished">
+          2018-09-16
+      </time>
+    
+    
+    | 
+    <a href='/tags/H5/'>H5</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        iframe会阻塞主页面的Onload事件；iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript动态给iframe添加src属性值，这样可以可以绕开以上两个问题。
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2018/09/16/ifream/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2018/09/16/doctype/">Doctype的作用，严格模式与混杂模式如何区分。</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2018-09-15T16:00:00.000Z" itemprop="datePublished">
+          2018-09-16
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        声明位于文档中的最前面，处于标签之前，告诉浏览器的解析器，用什么文档类型、规范解析这个文档，严格模式的排版和js运作模式是以该浏览器的最高标准运行。 在混杂模式下，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防站点无法工作 doctype 不存在或着格式不正确会导致文档以混杂模式呈现
+H5中Doctype
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2018/09/16/doctype/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
                     <h3><a href="/2018/08/28/article-title/">移动端Css3几个问题</a></h3>
                     <span>
                         <span class="post-meta">
@@ -270,6 +458,42 @@ Quick StartCreate a new p
             </div>
         </div>
         
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2018/08/08/link-inport/">CSSlink和important</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2018-08-07T16:00:00.000Z" itemprop="datePublished">
+          2018-08-08
+      </time>
+    
+    
+    | 
+    <a href='/tags/CSS/'>CSS</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        #link跟import 1.link是xhtml标签，@import是css提供的引入方式 2.页面加载时link 会同时被加载， @import 是等到页面被加载完再加载 3.link的权重要高于 @import
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2018/08/08/link-inport/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
         <nav class="pagination" role="pagination">
           
           
@@ -299,7 +523,7 @@ Quick StartCreate a new p
             <div class="social">
                 <ul>
                     
-                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    <li><a href="https://github.com/tonystarkguo" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
                     
                     
                     <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
